@@ -1,0 +1,8 @@
+Sep 03 15:09:49 egor-VirtualBox systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Sep 03 15:09:49 egor-VirtualBox sshd[3364]: Server listening on 0.0.0.0 port 22.
+Sep 03 15:09:49 egor-VirtualBox sshd[3364]: Server listening on :: port 22.
+Sep 03 15:09:49 egor-VirtualBox systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Sep 03 15:10:28 egor-VirtualBox sshd[3379]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=egor
+Sep 03 15:10:30 egor-VirtualBox sshd[3379]: Failed password for egor from 127.0.0.1 port 45336 ssh2
+Sep 03 15:10:37 egor-VirtualBox sshd[3379]: Accepted password for egor from 127.0.0.1 port 45336 ssh2
+Sep 03 15:10:37 egor-VirtualBox sshd[3379]: pam_unix(sshd:session): session opened for user egor(uid=1000) by egor(uid=0)
