@@ -13,10 +13,7 @@ def log_parse(filename):
                     "port" : parts[12]
                 }
                 logs.append(log)
-    with open(filename, "r") as file:
-        for line in file:
-            parts = line.split()
-            if "Accepted password" in line:
+            elif "Accepted password" in line:
                 log = {
                     "date" : parts[0] + " " + parts[1],
                     "time" : parts[2],
@@ -27,6 +24,7 @@ def log_parse(filename):
                 }
                 logs.append(log)
     return logs
+
 
 logs = log_parse("ssh.log")
 print(logs)
